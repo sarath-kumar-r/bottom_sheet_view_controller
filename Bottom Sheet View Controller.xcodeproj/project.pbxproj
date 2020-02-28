@@ -14,6 +14,7 @@
 		ACC2975D24063A7100967282 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACC2975C24063A7100967282 /* Assets.xcassets */; };
 		ACC2976024063A7100967282 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC2975E24063A7100967282 /* LaunchScreen.storyboard */; };
 		ACC299DE2407A4E700967282 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC299DD2407A4E600967282 /* UIView.swift */; };
+		ACFCD1AA24093439005E1A26 /* UIBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCD1A924093439005E1A26 /* UIBottomSheetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ACC2975F24063A7100967282 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACC2976124063A7100967282 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACC299DD2407A4E600967282 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		ACFCD1A924093439005E1A26 /* UIBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBottomSheetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				ACC2975E24063A7100967282 /* LaunchScreen.storyboard */,
 				ACC2976124063A7100967282 /* Info.plist */,
 				ACC299DD2407A4E600967282 /* UIView.swift */,
+				ACFCD1A924093439005E1A26 /* UIBottomSheetViewController.swift */,
 			);
 			path = "Bottom Sheet View Controller";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFCD1AA24093439005E1A26 /* UIBottomSheetViewController.swift in Sources */,
 				ACC299DE2407A4E700967282 /* UIView.swift in Sources */,
 				ACC2975824063A6F00967282 /* ViewController.swift in Sources */,
 				ACC2975424063A6F00967282 /* AppDelegate.swift in Sources */,
