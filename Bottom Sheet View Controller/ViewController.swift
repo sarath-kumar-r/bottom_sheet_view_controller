@@ -39,17 +39,22 @@ class ViewController: UIViewController {
     }
 }
 
-class UIBottomSheetController: UIViewController {
+
+class UIBottomSheetController: UIViewController, UIBottomSheetPresentable {
     
     var swipeInteractionController: UISwipeToDismissInteractionController!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .red
         self.swipeInteractionController = UISwipeToDismissInteractionController(viewController: self)
-    }
-    
+    }    
 }
 
+
+protocol UIBottomSheetPresentable {
+    
+    var swipeInteractionController: UISwipeToDismissInteractionController! { get set }
+}
 
 class UISwipeToDismissInteractionController: UIPercentDrivenInteractiveTransition {
     
@@ -119,7 +124,7 @@ extension UIViewController: UIViewControllerTransitioningDelegate {
     }
     
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if let modalVc = dismissed as? UIBottomSheetController {
+        if let modalVc = dismissed as? UIBottomSheetPresentable {
             return UIBottomSheetDimisser(interactor: modalVc.swipeInteractionController)
         }
         return nil
